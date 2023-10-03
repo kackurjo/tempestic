@@ -1,0 +1,14 @@
+@font-face {
+  font-family: OpenSans;
+  src: url(OpenSans-VariableFont_wdth,wght.ttf);
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  color: #010100;
+  background-color: #F0EAD6;
+  color: #000000;
+  font-family: OpenSans;
+}
