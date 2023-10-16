@@ -7,8 +7,7 @@ body {
   margin: 0;
   width: 100vw;
   height: 100vh;
-  color: #010100;
-  background-color: #F0EAD6;
-  color: #000000;
+  background-color: #58bac9;
+  background: linear-gradient(180deg, rgba(88,186,201,1) 10%, rgb(67, 92, 119) 85%);
   font-family: OpenSans;
 }
