@@ -1,6 +1,6 @@
 @font-face {
   font-family: OpenSans;
-  src: url(OpenSans-VariableFont_wdth,wght.ttf);
+  src: url('/OpenSans-VariableFont_wdth,wght.ttf');
 }
 
 body {

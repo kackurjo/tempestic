@@ -4,7 +4,7 @@ import {
   Route,
   Routes
 } from 'react-router-dom';
-import { getWeathertoday, getWeekWeather, seaLevelRequest } from './helpers/Requests';
+import { getWeathertoday, getWeekWeather } from './helpers/Requests';
 import { weather } from './types';
 import Navbar from './components/navbar/Navbar';
 import Home from './pages/Home';
@@ -18,8 +18,6 @@ export default function App() {
   const [place, setPlace] = useState<string>('helsinki');
   const [weatherToday, setWeatherToday] = useState<weather[] | undefined>();
   const [weekWeather, setWeekWeather] = useState<weather[] | undefined>();
-  const [tmpSeaLevel, setTmpSeaLevel] = useState<any | undefined>();
-  const [seaLevel, setSeaLevel] = useState<any | undefined>();
   const [selectedHour, setSelectedHour] = useState<number>(0);
   const [selectedDay, setSelectedDay] = useState<number>(0);
 
@@ -29,7 +27,6 @@ export default function App() {
       endDate.setHours(23, 59, 59);
       setWeatherToday(await getWeathertoday(place, endDate));
       setWeekWeather(await getWeekWeather(place));
-      setSeaLevel(await seaLevelRequest('60.16952,24.93545'));
     } catch (error: any) {
       console.log(error);
     }
