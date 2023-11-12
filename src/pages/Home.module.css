@@ -1,6 +1,5 @@
 .topWrapper {
   width: 96vw;
-  height: 23vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +9,6 @@
 
 .topLeft,
 .topRight {
-  height: 23vh;
   width: 43vw;
   display: flex;
   flex-direction: column;
@@ -21,10 +19,9 @@
 }
 
 .hourWrapper {
-  width: 98vw;
-  max-height: 23vh;
+  width: 97vw;
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
   color: #FFF;
   overflow-y: auto;
   padding: 2vh 0;
@@ -34,7 +31,7 @@
 .hourDiv {
   margin: 0.5vh 0.1vw 0 0.1vw;
   border-radius: 10px;
-  min-width: 5vw;
+  min-width: 4.8vw;
   max-height: 20vh;
   display: flex;
   flex-direction: column;
@@ -51,28 +48,32 @@
 }
 
 .weatherIcon {
-  width: 100%;
+  width: 43vw;
 }
 
-.minWeatherIcon {
-  max-width: 4vw;
+.hourWeatherIcon {
+  height: 100%;
+}
+
+.botWeatherIcon {
+  width: 100%;
 }
 
 .botWrapper {
   width: 100vw;
-  max-height: 40vh;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: auto auto;
   justify-content: center;
-  align-items: center;
 }
 
 .dateDiv {
   margin: 0.5vh 1vw 0 1vw;
+  padding: 2vh 0;
   border-radius: 10px;
-  min-width: 98vw;
+  width: 40vw;
   max-height: 20vh;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   text-align: center;
@@ -84,7 +85,9 @@
 @media only screen and (min-width: 600px) {
 
   .weatherIcon {
-    width: unset;
-    height: 100%;
+    width: 50%;
+  }
+  .botWeatherIcon {
+    width: 15%;
   }
 }

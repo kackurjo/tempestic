@@ -23,12 +23,13 @@ export default function Nabar(props: PropsInterface) {
         <div className={Style.searchDiv}>
           <Paper
             component="form"
-            sx={{ p: '2px 4px', display: 'flex', alignItems: 'center' }}
+            sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', maxWidth: '80%' }}
           >
             <InputBase
               sx={{ ml: 1, flex: 1 }}
               onChange={(e) => setTmpPlace(e.target.value)}
               value={tmpPlace}
+              size='small'
               placeholder="Search place"
               inputProps={{ 'aria-label': 'Search place' }}
             />

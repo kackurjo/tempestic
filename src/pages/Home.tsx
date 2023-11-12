@@ -73,7 +73,7 @@ export default function Home(props: PropsInterface) {
               >
                 <p style={{ margin: 0 }}>{confHours(val.time)}</p>
                 <img
-                  className={Style.minWeatherIcon}
+                  className={Style.hourWeatherIcon}
                   alt={val.smartsymboltext}
                   src={`/symbols/${val.smartsymbol}.svg`}
                 />
@@ -92,7 +92,7 @@ export default function Home(props: PropsInterface) {
                 }}
               >
                 <img
-                  className={Style.minWeatherIcon}
+                  className={Style.botWeatherIcon}
                   alt={val.smartsymboltext}
                   src={`/symbols/${val.smartsymbol}.svg`}
                 />
